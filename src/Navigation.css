@@ -1,0 +1,30 @@
+.navigation__menu {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.navigation {
+    height: 50px;
+}
+
+.navigation__modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 0%;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    transition: all 0.5s ease-in-out
+}
