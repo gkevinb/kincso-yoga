@@ -14,16 +14,21 @@ function Navigation() {
     useEffect(() => {
         if (toggle) {
             document.body.style.overflow = "hidden";
-            setWidth("100%")
+            setWidth("100%");
         } else {
             document.body.style.overflow = "unset";
-            setWidth("0%")
+            setWidth("0%");
         }
     }, [toggle]);
 
     return (
         <div className="navigation">
-            <div className="navigation__modal" style={{width: width}}>
+            <div className="navigation__modal" style={{ width: width }}>
+                <h1>Home</h1>
+                <h1>Blog</h1>
+                <h1>About</h1>
+            </div>
+            <div className="navbar">
                 <h1>Home</h1>
                 <h1>Blog</h1>
                 <h1>About</h1>
