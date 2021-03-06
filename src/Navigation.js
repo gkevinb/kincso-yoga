@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
-import "./Navigation.css";
+import "./Navigation.scss";
 
 function Navigation() {
     const [toggle, setToggle] = useState(false);
@@ -24,14 +24,14 @@ function Navigation() {
     return (
         <div className="navigation">
             <div className="navigation__modal" style={{ width: width }}>
-                <h1>Home</h1>
-                <h1>Blog</h1>
-                <h1>About</h1>
+                <h1>Kezdolap</h1>
+                <h1>Rolam</h1>
+                <h1>Kontakt</h1>
             </div>
             <div className="navbar">
-                <h1>Home</h1>
-                <h1>Blog</h1>
-                <h1>About</h1>
+                <h1>Kezdolap</h1>
+                <h1>Rolam</h1>
+                <h1>Kontakt</h1>
             </div>
 
             <div onClick={openMenu} className="navigation__menu">
